@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import AboutMe from "../components/AboutMe";
 
 function index() {
   return (
@@ -14,11 +15,14 @@ function index() {
       <Header />
 
       {/*Hero*/}
-      <section className="snap-center" id="#Hero">
+      <section className="snap-start" id="hero">
         <Hero />
       </section>
 
-      {/*  */}
+      {/* About Me */}
+      <section className="snap-center" id="about">
+        <AboutMe />
+      </section>
       {/*  */}
       {/*  */}
       {/*  */}
