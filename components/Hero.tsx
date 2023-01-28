@@ -31,7 +31,9 @@ const Hero = (props: Props) => {
       </h1>
 
       <div className="flex sm:gap-2 pt-2">
-        <div className="navButton">about</div>
+        <a href="#about" className="navButton">
+          about
+        </a>
         <div className="navButton">experience</div>
         <div className="navButton">skills</div>
         <div className="navButton">projects</div>

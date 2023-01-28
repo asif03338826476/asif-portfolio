@@ -26,7 +26,18 @@ const AboutMe = (props: Props) => {
         src="/asif.jpeg"
         className="h-40 w-40 md:h-80 -mb-36 md:mb-0 md:w-80 md:rounded-md rounded-full"
       />
-      <div>
+      <motion.div
+        initial={{
+          scale: 2,
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: [0, 0.5, 1],
+          scale: [1.5, 1],
+        }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <h1 className=" my-4 lg:my-10  font-semibold text-sm md:text-xl">
           Here's Some of My{" "}
           <span className=" p-2 sm:p-4 font-bold border animate-pulse rounded-tl-[65px] rounded-bl-[35px] rounded-tr-[35px] rounded-br-[65px]  rounded-b-sm border-mustard">
@@ -46,7 +57,7 @@ const AboutMe = (props: Props) => {
           programming is not just a job, but a true passion, and I am excited to
           continue growing and developing my skills as a developer."
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
