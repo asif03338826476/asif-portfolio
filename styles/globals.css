@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .navButton {
+    @apply hover:border-mustard border border-transparent font-medium sm:tracking-[4px] text-gray-500 z-20 hover:cursor-pointer transition-all py-2 px-4 text-sm uppercase rounded-md;
+  }
+}

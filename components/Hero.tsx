@@ -29,6 +29,13 @@ const Hero = (props: Props) => {
         <p>{text}</p>
         <Cursor cursorColor="#F7AB0A" />
       </h1>
+
+      <div className="flex gap-2 pt-4">
+        <div className="navButton">about</div>
+        <div className="navButton">experience</div>
+        <div className="navButton">skills</div>
+        <div className="navButton">projects</div>
+      </div>
     </div>
   );
 };
